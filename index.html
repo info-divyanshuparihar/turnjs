@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn js</title>
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/turn.js"></script>
+    <style>
+        body{
+            overflow: hidden;
+            background: url('images/bg.png');
+            background-size: 100% 100%;
+        }
+        #album{
+            width: 600px;
+            height: 500px;
+            margin: 5% auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="album">
+    <div style="background: url('images/book1.jpg'); background-size: 100% 100%;"></div>
+    <div style="background: url('images/book2.jpg'); background-size:cover;"></div>
+    <div style="background: url('images/book3.jpg'); background-size:cover;"></div>
+    <div style="background: url('images/book4.jpg'); background-size:cover;"></div>
+    <div style="background: url('images/book5.jpg'); background-size:cover;"></div>
+    <div style="background: url('images/book6.jpg'); background-size:cover;"></div>
+    <div style="background: url('images/book7.jpeg'); background-size: cover;">
+        <h1 style="margin-top: 5%; margin-left: 5%;">Divyanshu</h1>
+        <p style="margin-top: 5%; margin-left: 5%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis error iusto totam dignissimos odit accusantium rem aut obcaecati delectus, deserunt modi iste perferendis molestias, natus repudiandae quidem odio repellendus.</p>
+    </div>
+    <div style="background: url('images/book8.jpeg'); background-size: cover;">
+        <h2 style="margin-top: 5%; margin-left: 5%;">Heading</h2>
+        <p style="margin-top: 5%; margin-left: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odit excepturi, modi velit rem aut dolore, odio natus cupiditate fugiat provident reprehenderit ipsa beatae at nisi voluptate sint eum delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore a doloribus nam obcaecati accusantium impedit accusamus nisi atque magni eveniet exercitationem numquam necessitatibus pariatur commodi ullam, optio reiciendis dolores!</p>
+    </div>
+    </div>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
